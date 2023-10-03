@@ -1,0 +1,35 @@
+#testArtist{
+    color: aqua;
+}
+#artistBgPic{
+    width: 100vw;
+    height: 35vh;
+}
+#artistContentBox{
+    padding: 50px 200px 10px 200px;
+}
+#artistContentTitle{
+    letter-spacing: 3px;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+#pressKit{
+    padding: 30px 200px 30px 200px;
+    border-top: 1px dotted black;
+    display: flex;
+    align-items: center;
+}
+#galleryMaterials{
+    border-top: 1px dotted black;
+    padding: 30px 200px 30px 200px;
+    display: flex;
+    align-items: center;
+}
+#artistGalleryBlurb{
+    border-top: 1px dotted black;
+    padding: 50px 200px 30px 200px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(82, 82, 82);
+}

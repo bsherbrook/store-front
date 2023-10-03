@@ -1,4 +1,4 @@
-import "./About.css";
+import "../styles/About.css"
 import Header from "./Header";
 
 

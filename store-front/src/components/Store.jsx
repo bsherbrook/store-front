@@ -1,7 +1,6 @@
-import "./Store.css";
+import "../styles/Store.css";
 import ProductCard from "./ProductCard";
 import productList from "../productList";
-import Header from "./Header";
 
 function Store(props) {
     return (

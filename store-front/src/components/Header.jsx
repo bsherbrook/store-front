@@ -1,18 +1,28 @@
-import "./Header.css";
+import "../styles/Header.css";
 import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
     <div id="headerBox">
       <div id="headerTitleBox">
-        <h1>Bryans Shopping Website</h1>  
-      </div>  
+        <Link to="/" id="titleLink">
+          <div>
+            <h2 id="headerTitleText">Gallery</h2>
+            <h2 id="headerTitleText2">at SIP</h2>
+          </div>
+        </Link>
+      </div>
       <div id="headerButtonBox">
-        <Link to="/"><button>Home</button></Link>
-        <Link to="/about"><button>About</button></Link>
-        <Link to="/store"><button>Store</button></Link>
-        <Link to="/cart"><button>Shopping Cart</button></Link>
-      </div>  
+        <Link to="/about" id="aboutLink">
+          About
+        </Link>
+        <Link to="/store">
+          Store
+        </Link>
+        <Link to="/cart">
+          Shopping Cart
+        </Link>
+      </div>
     </div>
   );
 }

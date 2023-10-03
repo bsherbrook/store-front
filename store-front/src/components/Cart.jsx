@@ -1,8 +1,6 @@
-import "./Cart.css";
-import Header from "./Header";
+import "../styles/Cart.css";
 
-
-const Cart = ({ cart }) => {
+const Cart = ({ cart, subTotal }) => {
   return (
     <>
       <div className="shopping-cart">
@@ -10,10 +8,13 @@ const Cart = ({ cart }) => {
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
-              {item.name} - ${item.price.toFixed(2)}
+              {item.name} - ${item.price.toFixed(2)} x {item.quantity}
             </li>
           ))}
         </ul>
+      </div>
+      <div className="total">
+            Subtotal: {subTotal}
       </div>
     </>
   );
