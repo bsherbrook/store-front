@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import homepageLg from "../assets/gallery.jpg"
 import homepageMed from "../assets/gallery-med.jpg"
 import homepageSm from "../assets/gallery-sm.jpg"
+import HomeCarousel from "./HomeCarousel";
 
 function Home(props) {
   let breakpoint=900;
@@ -15,7 +16,11 @@ function Home(props) {
 
     return (
       <>
-        <img  id="homepageBg" 
+
+        <div id="homePage">
+          <HomeCarousel />
+        </div>
+        {/* <img  id="homepageBg" 
               src={homepageBg} 
               alt="" />
         <motion.div
@@ -31,7 +36,7 @@ function Home(props) {
               <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
             </div>
           </Link>
-        </motion.div>
+        </motion.div> */}
       </>
     );
   }

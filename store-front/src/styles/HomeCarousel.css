@@ -1,0 +1,15 @@
+#carouselPic{
+    max-height:90vh;
+    min-height: 60vh;
+    width: 100vw;
+}
+#carouselCaptionA{
+    top: 5vh;
+    bottom: auto;
+}
+#carouselCaptionB{
+    bottom: 5vh;
+}
+@media only screen and (max-width: 1175px) {
+    
+  }
