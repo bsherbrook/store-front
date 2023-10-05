@@ -1,31 +1,43 @@
-#headerBox{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 120px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top:0;
+#headerBox {
+  background-color: rgb(26, 25, 25);
+  z-index: 20;
+  padding-left: 120px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 75px;
+  font-family: "Barlow", sans-serif;
+  /* font-family: "Martian Mono", monospace; */
+  /* font-family: "Rambla", sans-serif; */
+  border-bottom: 1px solid rgb(60, 59, 59);
 }
-#headerButtonBox{
-    display: flex;
-    gap: 10px;
+#headerButtonBox {
+  display: flex;
+  gap: 20px;
 }
-#titleLink{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#headerLink {
+  font-family: "Martian Mono", monospace;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
-#headerTitleText{
-    font-size: 20px;
+#titleLink {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#headerTitleText2{
-    font-size: 20px;
-    margin-left: 50px;   
-    margin-top: -8px; 
+#headerTitleText {
+  font-size: 20px;
+}
+#headerTitleText2 {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: -8px;
 }

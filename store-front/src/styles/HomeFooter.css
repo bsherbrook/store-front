@@ -1,0 +1,47 @@
+#homeFooter{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    top: auto;
+    /* background-color:rgb(19, 17, 17); */
+    background-color:  rgb(26, 25, 25);;
+    line-height: 10px;
+    padding: 50px 15vh 20px 15vh;
+    font-size: 14px;
+}
+#homeFooterLinkBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* line-height: 8px; */
+}
+#footerInformed{
+    margin-bottom: 20px;
+}
+#addressTitle{
+    margin-bottom: 20px;
+}
+#specialHours{
+    font-size: 12px;
+    line-height: 14px;
+}
+#footerHoursBox{
+    display: flex;
+    flex-direction: column;
+}
+#footerHours{
+    display: flex;
+    line-height: 5px;
+    margin-top: 10px;
+}
+#homeFooterBlurb{
+    line-height: normal;
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+}
+#homeFooterPlug{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}

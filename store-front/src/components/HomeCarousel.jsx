@@ -18,7 +18,7 @@ function HomeCarousel() {
             <Link to="/artist-profile" style={{ textDecoration: "none" }}>
               <div id="homeExhibitBoxA">
                 <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
-                <h2 id="exhibitTitleText2">Brave New World</h2>
+                <h2 id="exhibitTitleShow">Brave New World</h2>
                 <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
               </div>
             </Link>
@@ -31,7 +31,7 @@ function HomeCarousel() {
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxA">
               <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
-              <h2 id="exhibitTitleText2">Brave New World</h2>
+              <h2 id="exhibitTitleShow">Brave New World</h2>
               <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
             </div>
           </Link>
@@ -42,9 +42,9 @@ function HomeCarousel() {
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">
-              <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
-              <h2 id="exhibitTitleText2">Brave New World</h2>
-              <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
+              <h1 id="exhibitTitleText2">Zalfa Anjelee-Imani</h1>
+              <h2 id="exhibitTitleShow2">Brave New World</h2>
+              <h5 id="exhibitTitleDates2">January 21, 2024 - June 15, 2024</h5>
             </div>
           </Link>
         </Carousel.Caption>
@@ -54,9 +54,9 @@ function HomeCarousel() {
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">
-              <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
-              <h2 id="exhibitTitleText2">Brave New World</h2>
-              <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
+              <h1 id="exhibitTitleText2">Zalfa Anjelee-Imani</h1>
+              <h2 id="exhibitTitleShow2">Brave New World</h2>
+              <h5 id="exhibitTitleDates2">January 21, 2024 - June 15, 2024</h5>
             </div>
           </Link>
         </Carousel.Caption>

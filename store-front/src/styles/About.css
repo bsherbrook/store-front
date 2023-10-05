@@ -1,6 +1,10 @@
 #aboutUs{
     display: flex;
     flex-direction: column;
+     /* font-family: "Martian Mono", monospace; */
+    /* font-family: "Rambla", sans-serif; */
+    /* font-family: "Barlow", sans-serif; */
+
 }
 #testpic{
     width:600px;

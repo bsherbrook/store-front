@@ -1,14 +1,57 @@
 #carouselPic{
     max-height:90vh;
     min-height: 60vh;
-    width: 100vw;
+    width: 95vw;
 }
 #carouselCaptionA{
-    top: 5vh;
+    top: 2vh;
     bottom: auto;
+    
 }
 #carouselCaptionB{
-    bottom: 5vh;
+    bottom: 10vh;
+}
+#exhibitTitleText{
+    margin-left: -120px;
+    letter-spacing: 5px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 55px;
+    color: rgb(113, 255, 255);
+}
+#exhibitTitleShow{
+    font-style: italic;
+    margin-left: -110px;
+    font-size: 40px; 
+    font-family: "Barlow", sans-serif;
+    color: rgb(120, 251, 185);
+}
+#exhibitTitleDates{
+    margin-left: 30px;
+    margin: 15px 0 0 100px;
+    font-size: 25px;
+    font-family: "Barlow", sans-serif;
+    color: rgb(255, 204, 86);
+}
+#exhibitTitleText2{
+    color: white;
+    letter-spacing: 4px;
+    font-family: "Martian Mono", monospace;
+    font-size: 45px;
+}
+#exhibitTitleShow2{
+    color: white; 
+    font-style: italic;
+    font-size: 40px; 
+    letter-spacing: 4px;
+    font-family: "Rambla", sans-serif;
+    margin-top: 20px;
+}
+#exhibitTitleDates2{
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-family: "Rambla", sans-serif;
 }
 @media only screen and (max-width: 1175px) {
     
