@@ -1,0 +1,32 @@
+#storeBannerPic{
+    height: 35vh;
+    width: 99vw;
+}
+#storeBannerBox{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#storeHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    padding: 50px;
+    /* font-family: "Martian Mono", monospace; */
+    /* font-family: "Rambla", sans-serif; */
+}
+#storeHeadingSip{
+    margin-left: 100px;
+}
+#storeHeadingTitle{
+    width:50vh;
+}
+#storeHeadingBlurb{
+    width: 500px;
+}
+#storeCardBox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}

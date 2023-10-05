@@ -3,14 +3,20 @@
     flex-direction: column;
      /* font-family: "Martian Mono", monospace; */
     /* font-family: "Rambla", sans-serif; */
-    /* font-family: "Barlow", sans-serif; */
+    font-family: "Barlow", sans-serif;
 
 }
 #testpic{
-    width:600px;
+    /* width:600px; */
+    width: 35vw;
+    min-height: 20vh
 }
 #aboutBox{
     padding: 50px 25vw 20px 10vw;
+}
+#aboutBox>p{
+    font-size: 20px;
+    line-height: 25px;
 }
 #aboutTitleBox{
     display: flex;

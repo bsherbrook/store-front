@@ -1,27 +1,27 @@
 const productList = [
     {
       id: 1,
-      name: 'Style King',
-      price: 10.99,
-      image: 'shoe-irene-kredenets.jpg',
+      name: 'Gallery Tote Bag',
+      price: 15.99,
+      image: 'tote.jpg',
     },
     {
       id: 2,
-      name: 'The Puma',
-      price: 19.99,
-      image: 'puma-shoe-dk.jpg',
+      name: 'Sip Hoodie',
+      price: 49.99,
+      image: 'hoodie.jpg',
     },
     {
       id: 3,
-      name: 'The Trackstar',
-      price: 10.99,
-      image: 'red-shoe-dominoe.jpg',
+      name: 'Sip fitted cap',
+      price: 29.99,
+      image: 'cap.jpg',
     },
     {
       id: 4,
-      name: 'The Everyday',
-      price: 19.99,
-      image: 'boot-or-hakim.jpg',
+      name: 'The Mona Lisa',
+      price: 1000000.00,
+      image: 'monalisa.jpg',
     },    
   ];
   
