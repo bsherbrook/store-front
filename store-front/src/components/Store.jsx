@@ -38,6 +38,7 @@ function Store(props) {
             key={product.id}
             product={product}
             addToCart={props.addToCart}
+            cart={props.cart}
           />
         ))}
       </div>

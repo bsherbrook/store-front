@@ -15,19 +15,19 @@ function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [cart, setCart] = useState([]);
   const [subTotal, setSubTotal]= useState(0);
+  
   const addToCart = (product, quantity) => {
     const newCart = JSON.parse(JSON.stringify(cart));
     const productIndex = newCart.findIndex((item) => item.id === product.id);
     let total=Number(subTotal);
     if (productIndex === -1){ 
-      quantity=1;
       newCart.push({...product, quantity})}
     else{
-      newCart[productIndex].quantity += 1
+      newCart[productIndex].quantity += quantity
     }
       setCart(newCart);
       //update subtotal with new item
-      total+=product.price;
+      total+=product.price*quantity;
       setSubTotal(total.toFixed(2));  
   };
   useEffect(() => {
@@ -58,6 +58,7 @@ function App() {
                 productList={productList}
                 ProductCard={ProductCard}
                 addToCart={addToCart}
+                cart={cart}
               />
             ),
             path: "/store",

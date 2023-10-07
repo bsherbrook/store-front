@@ -5,6 +5,7 @@ import aboutBg from "../assets/aboutBg.jpg";
 import founderPic from "../assets/founder.jpg";
 import artPic from "../assets/artcrop4.jpg";
 import AboutCarousel from "./AboutCarousel";
+import HomeFooter from "./HomeFooter";
 
 function About() {
   return (
@@ -63,7 +64,7 @@ function About() {
           <div id="aboutGalleryBox">
             <img
               id="aboutGallery"
-              src='src/assets/artcrop3.jpg'
+              src="src/assets/storepic2.jpg"
               alt="an art show at gallery at sip"
             />
           </div>
@@ -99,7 +100,8 @@ function About() {
               coffee, tea, and conversation.
             </p>
           </div>
-          <div id="aboutGalleryBox">
+          <HomeFooter />
+          {/* <div id="aboutGalleryBox">
             <img id="founderPic" src={founderPic} alt="" />
           </div>
           <div id="aboutBox">
@@ -113,7 +115,7 @@ function About() {
               Ethan Sinclair, shared her vision, bringing architectural
               brilliance to the table.
             </p>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </>

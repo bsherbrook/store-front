@@ -1,3 +1,6 @@
-#testCart{
-    color: blue;
+.cart{
+    padding: 20px 150px 20px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

@@ -12,7 +12,7 @@
     min-height: 20vh
 }
 #aboutBox{
-    padding: 50px 25vw 20px 10vw;
+    padding: 50px 20vw 20px 10vw;
 }
 #aboutBox>p{
     font-size: 20px;
@@ -41,8 +41,7 @@
     color: gray;
 }
 #aboutGallery{
-    width: 50vw;
-    height: 30vh;
+    width: 35vw;    
 }
 #aboutGalleryBox{
     display: flex;

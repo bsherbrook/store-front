@@ -1,20 +1,19 @@
 import "../styles/Cart.css";
+import CartCard from "./CartCard";
 
 const Cart = ({ cart, subTotal }) => {
+  
+
   return (
     <>
-      <div className="shopping-cart">
-        <h2>Shopping Cart</h2>
-        <ul>
+      <div className="cart">
+        <div className="shopping-cart">
+          <h2>Shopping Cart</h2>
           {cart.map((item) => (
-            <li key={item.id}>
-              {item.name} - ${item.price.toFixed(2)} x {item.quantity}
-            </li>
+            <CartCard key={item.id} item={item} cart={cart} />
           ))}
-        </ul>
-      </div>
-      <div className="total">
-            Subtotal: {subTotal}
+        </div>
+        <div className="total">Subtotal: {subTotal}</div>
       </div>
     </>
   );

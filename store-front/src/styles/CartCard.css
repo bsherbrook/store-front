@@ -1,0 +1,8 @@
+#cartItem{
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+}
+#cartItemPic{
+    width: 150px;
+}
