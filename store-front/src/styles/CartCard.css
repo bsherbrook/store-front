@@ -1,8 +1,17 @@
-#cartItem{
-    background-color: aliceblue;
-    padding: 20px;
-    display: flex;
+#cartItem {
+  background-color: aliceblue;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 15px;
+  gap: 40px;
+  align-items: center;
 }
-#cartItemPic{
-    width: 150px;
+#cartItemPic {
+  width: 150px;
+}
+.cart-item-info {
+}
+.cart-quantity-box {
+  display: flex;
+  align-items: center;
 }

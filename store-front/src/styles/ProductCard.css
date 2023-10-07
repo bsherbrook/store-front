@@ -8,19 +8,49 @@
   border-radius: 10px;
   font-family: "Barlow", sans-serif;
   font-size: 20px;
+  position: relative;
 }
-#addButton{
-    color: blue;
-    font-weight: 500;
-    font-family: "Martian Mono", monospace;
+#productDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in;
 }
-#minusButton{
-    color: blue;
-    font-family: "Martian Mono", monospace;
-    font-weight: 1000;
+#productDisplay.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  z-index: -10;
+}
+.productInfoCard {
+  z-index: -10;
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  transition: opacity 0.5s ease-in;
+  height: 100%;
+  cursor: pointer;
+}
+.productInfoCard.show {
+  z-index: 10;
+  opacity: 100;
+  transition: opacity 0.5s ease-in;
+}
+#addButton {
+  color: blue;
+  font-weight: 500;
+  font-family: "Martian Mono", monospace;
+}
+#minusButton {
+  color: blue;
+  font-family: "Martian Mono", monospace;
+  font-weight: 1000;
 }
 #productCardPic {
   width: 250px;
+}
+#productCardPic:hover {
+  cursor: pointer;
 }
 #quantityInput {
   width: 40px;
@@ -47,19 +77,19 @@
   margin-bottom: 10px;
 }
 @keyframes shake {
-    0% {
-      transform: translateY(0);  
-    }
-    25% {
-      transform: translateY(-5px);  
-    }
-    50% {
-      transform: translateY(5px);
-    }
-    75% {
-      transform: translateY(-5px);  
-    }
-    100% {
-      transform: translateY(0);  
-    }
+  0% {
+    transform: translateY(0);
   }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
