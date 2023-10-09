@@ -13,7 +13,7 @@ function About() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 2.0 }}
         exit={{ opacity: 0 }}
       >
         <div id="carouselFlex">

@@ -9,6 +9,8 @@
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   position: relative;
+  border: 1px dotted gray;
+  box-shadow: 1px 1px rgb(167, 223, 235);
 }
 #productDisplay {
   display: flex;
@@ -36,6 +38,8 @@
   flex-direction: column;
   align-items: center;
   font-family: "Martian Mono", monospace;
+  border-radius: 10px;
+  border: 1px dotted rgb(92, 92, 92);
 
 }
 .productInfoCard.show {

@@ -9,12 +9,16 @@ function HomeCarousel() {
       <Carousel.Item>
         <img id="carouselPic" src="src/assets/galleryHome.jpg" />
         <Carousel.Caption id="carouselCaptionA">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 4 }}
-            exit={{ opacity: 0 }}
-          >
+            <motion.div
+              className="box"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 4.0,
+                delay: 0.4,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
             <Link to="/artist-profile" style={{ textDecoration: "none" }}>
               <div id="homeExhibitBoxA">
                 <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>

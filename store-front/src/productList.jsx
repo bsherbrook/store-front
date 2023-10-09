@@ -26,7 +26,7 @@ const productList = [
   {
     id: 4,
     name: "The Mona Lisa",
-    price: 1000000.00,
+    price: 499.99,
     image: "monalisa.jpg",
     description:
       "Is she smiling? We know you sure will be if you purchase this rare masterpiece! The one at the Louvre was just too small so we blew this baby up to 128x96 and its ready to hang over any place in your house! Note: high quality reproduction.",
