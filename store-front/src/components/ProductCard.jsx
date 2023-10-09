@@ -1,10 +1,12 @@
 import "../styles/ProductCard.css";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
+import Quantity from "./Quantity";
+import Cup from "../assets/cup-hot-fill.svg";
 
-const ProductCard = ({ product, addToCart, cart }) => {
+const ProductCard = ({ product, addToCart, cartChange, cart }) => {
   const [quantity, setQuantity] = useState(1);
-  const handleChange = (e) => {
+  const handleStoreChange = (e) => {
     let val = e.target.value;
     setQuantity(val === "" ? val : +val);
   };
@@ -31,8 +33,15 @@ const ProductCard = ({ product, addToCart, cart }) => {
     productInfo.className += ` show`;
   };
   const showProduct = (e) => {
-    e.target.className = "productInfoCard";
-    e.target.nextSibling.className = "";
+    if (e.target.className === "productInfoCard show") {
+      e.target.className = "productInfoCard";
+      e.target.nextSibling.className = "";
+    }
+    else {
+      let a=e.target.parentNode;
+      a.className = "productInfoCard";
+      a.nextSibling.className=''
+    }
   };
 
   return (
@@ -42,6 +51,10 @@ const ProductCard = ({ product, addToCart, cart }) => {
         className="productInfoCard"
         onClick={showProduct}
       >
+        <img src={Cup} alt="logo" id="infoCardLogo" className="" />
+        <div id="infoCardTitle" className="">
+          {product.name}
+        </div>
         {product.description}
       </div>
       <div id="productDisplay">
@@ -53,42 +66,18 @@ const ProductCard = ({ product, addToCart, cart }) => {
         />
         <h3>{product.name}</h3>
         <p>${product.price.toFixed(2)}</p>
-        <div id="quantityBox">
-          <Button
-            id="minusButton"
-            variant="light"
-            onClick={decrease}
-            aria-label="decrease quantity"
-            className="btn-sm"
-          >
-            -
-          </Button>{" "}
-          <input
-            name="quantityInput"
-            id="quantityInput"
-            value={quantity}
-            type="number"
-            min="1"
-            onChange={handleChange}
-            autoComplete="off"
-            placeholder="1"
-          />
-          <Button
-            id="addButton"
-            variant="light"
-            onClick={increase}
-            aria-label="increase quantity"
-            className="btn-sm"
-          >
-            +
-          </Button>{" "}
-        </div>
+        <Quantity
+          increase={increase}
+          decrease={decrease}
+          cartChange={cartChange}
+          handleStoreChange={handleStoreChange}
+          quantity={quantity}
+        />
         <Button
           variant="primary"
           onClick={(e) => {
             addToCart(product, quantity);
             buttonShake(e);
-            console.log(cart);
           }}
           disabled={quantity < 1 || quantity % 1 !== 0}
           id="addToCartButton"

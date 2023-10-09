@@ -28,11 +28,58 @@ function App() {
     setCart(newCart);
     //update subtotal with new item
     total += product.price * quantity;
-    setSubTotal(total.toFixed(2));
+    setSubTotal(total.toFixed(2).toLocaleString());
   };
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
+
+  function changeCartItemQuantity(productId, newQuantity) {
+    setCart(
+      cart.map((item) => {
+        if (item.id === productId) item.quantity = newQuantity;
+        return item;
+      })
+    );
+    let total = cart.reduce(
+      (accum, item) => accum + item.price * item.quantity,
+      0
+    );
+    setSubTotal(total.toFixed(2));
+  }
+
+  function deleteFromCart(productId) {
+    let newCart = cart.filter((product) => product.id !== productId);
+    setCart(newCart);
+    let total = newCart.reduce(
+      (accum, item) => accum + item.price * item.quantity,
+      0
+    );
+    setSubTotal(total.toFixed(2));
+  }
+  function onCartChange(productId, newQuantity) {
+    // if new quantity is not a whole number
+    if (newQuantity % 1) return;
+    if (newQuantity <= 0) {
+      deleteFromCart(productId);
+      return;
+    }
+
+    changeCartItemQuantity(productId, newQuantity);
+  }
+
+  function decrementCartItem(product) {
+    if (product.quantity === 1) {
+      deleteFromCart(product.id);
+      return;
+    }
+
+    changeCartItemQuantity(product.id, product.quantity - 1);
+  }
+
+  const incrementCartItem = (product) => {
+    changeCartItemQuantity(product.id, product.quantity + 1);
+  };
 
   return (
     <>
@@ -56,6 +103,7 @@ function App() {
                 productList={productList}
                 ProductCard={ProductCard}
                 addToCart={addToCart}
+                cartChange={onCartChange}
                 cart={cart}
               />
             ),
@@ -63,7 +111,16 @@ function App() {
             id: 3,
           },
           {
-            element: <Cart cart={cart} subTotal={subTotal} />,
+            element: (
+              <Cart
+                cart={cart}
+                subTotal={subTotal}
+                onChange={onCartChange}
+                onDecrement={decrementCartItem}
+                onIncrement={incrementCartItem}
+                onRemove={deleteFromCart}
+              />
+            ),
             path: "/cart",
             id: 4,
           },

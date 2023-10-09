@@ -1,11 +1,9 @@
 import "../styles/CartCard.css";
+import { useState } from "react";
+import Quantity from "./Quantity";
 
-const CartCard = ({item, cart}) => {
+const CartCard = ({item, cart, cartChange, increase, decrease, remove }) => {
   
-  const valueChange=(e)=>{
-    console.log(e.target.value)
-  }
-
   return (
     <>
       <div id="cartItem">
@@ -19,17 +17,15 @@ const CartCard = ({item, cart}) => {
             <p>${item.price}</p>
             <div className="cart-quantity-box">
                 <p>Quantity:</p>
-                <input  //make this a drop down menu like on amazon?
-                  name="quantityInput"
-                  id="quantityInput"
-                  value={item.quantity}
-                  type="number"
-                  min="1"
-                  onChange={valueChange}
-                  autoComplete="off"
+                <Quantity 
+                  quantity={item.quantity}
+                  increase={()=>increase(item)}
+                  decrease={()=>decrease(item)}
+                  cartChange={(value)=>cartChange(item.id, +value)}
+                  //build app.jsx increment etc. change functionality
                 />
             </div>
-            <button>Delete from Cart</button>
+            <button onClick={()=>remove(item.id)}>Delete from Cart</button>
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ const productList = [
     price: 15.99,
     image: "tote.jpg",
     description:
-      "Help Support the Gallery at Sip with this limited edition Tote. Made from the canvas of Ilya Repins discarded underpaintings and assembled in America. Guaranteed to hold all your things!",
+      "Help Support the Gallery at Sip with this limited edition Tote. Made from the canvas of Ilya Repin's discarded underpaintings and assembled in America. Guaranteed to hold all your things!",
   },
   {
     id: 2,
