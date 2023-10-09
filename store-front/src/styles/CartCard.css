@@ -1,17 +1,38 @@
 #cartItem {
-  background-color: aliceblue;
+  background-color: white;
   padding: 20px;
   display: flex;
   margin-bottom: 15px;
   gap: 40px;
   align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 1px solid rgb(141, 200, 255);
+  box-shadow: 1px 2px rgb(194, 194, 194);
 }
 #cartItemPic {
   width: 150px;
 }
 .cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-quantity-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-item-description{
+  width: 40vw;
+  font-size: 16px;
 }
 .cart-quantity-box {
   display: flex;
   align-items: center;
+  width: 40%;
+}
+#deleteCartBtn{
+  font-size: 12px;
 }

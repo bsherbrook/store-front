@@ -1,6 +1,7 @@
 import "../styles/Cart.css";
 import CartCard from "./CartCard";
 import { Link } from "react-router-dom";
+import HomeFooter from "./HomeFooter";
 
 const Cart = ({
   cart,
@@ -12,6 +13,7 @@ const Cart = ({
 }) => {
 
   let total= Number(subTotal).toFixed(2);
+  let cartItemNum= cart.reduce((accumulator, item)=> accumulator+item.quantity,0);
 
   return (
     <>
@@ -27,7 +29,10 @@ const Cart = ({
           </div>
         ) : (
           <div className="shopping-cart">
-            <h2>Shopping Cart</h2>
+            <div className="cart-heading">
+              <h2>Shopping Cart</h2>
+              <div className="totalTitle">Subtotal: $ {total.toLocaleString()}</div>
+            </div>
             {cart.map((item) => (
               <CartCard
                 key={item.id}
@@ -41,8 +46,9 @@ const Cart = ({
             ))}
           </div>
         )}
-        <div className="total">Subtotal: ${total.toLocaleString()}</div>
+        <div className="total">Subtotal ({(cartItemNum)} Items): $ {total.toLocaleString()}</div>
       </div>
+      <HomeFooter />
     </>
   );
 };

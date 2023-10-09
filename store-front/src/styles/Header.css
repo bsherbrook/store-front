@@ -9,8 +9,6 @@
   top: 0;
   height: 75px;
   font-family: "Barlow", sans-serif;
-  /* font-family: "Martian Mono", monospace; */
-  /* font-family: "Rambla", sans-serif; */
   border-bottom: 1px solid rgb(60, 59, 59);
 }
 #headerButtonBox {
@@ -25,6 +23,7 @@
 }
 #headerLogo{
   margin-left: 10px;
+  margin-top: 14px;
 }
 #titleLink {
   text-decoration: none;

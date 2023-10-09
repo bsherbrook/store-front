@@ -1,6 +1,7 @@
 import "../styles/CartCard.css";
 import { useState } from "react";
 import Quantity from "./Quantity";
+import Button from "react-bootstrap/esm/Button";
 
 const CartCard = ({item, cart, cartChange, increase, decrease, remove }) => {
   
@@ -16,7 +17,7 @@ const CartCard = ({item, cart, cartChange, increase, decrease, remove }) => {
             <h3>{item.name}</h3>
             <p>${item.price}</p>
             <div className="cart-quantity-box">
-                <p>Quantity:</p>
+                {/* <p>Quantity:</p> */}
                 <Quantity 
                   quantity={item.quantity}
                   increase={()=>increase(item)}
@@ -25,8 +26,9 @@ const CartCard = ({item, cart, cartChange, increase, decrease, remove }) => {
                   //build app.jsx increment etc. change functionality
                 />
             </div>
-            <button onClick={()=>remove(item.id)}>Delete from Cart</button>
+            <Button id="deleteCartBtn" onClick={()=>remove(item.id)}>Delete from Cart</Button>
         </div>
+        <div className="cart-item-description">{item.description}</div>
       </div>
     </>
   );
