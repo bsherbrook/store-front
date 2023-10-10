@@ -9,21 +9,44 @@ function HomeCarousel() {
       <Carousel.Item>
         <img id="carouselPic" src="src/assets/galleryHome.jpg" />
         <Carousel.Caption id="carouselCaptionA">
-            <motion.div
-              className="box"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 4.0,
-                delay: 0.4,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 4.0,
+              delay: 0.4,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
             <Link to="/artist-profile" style={{ textDecoration: "none" }}>
               <div id="homeExhibitBoxA">
                 <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
+                <p className="presents">presents</p>
                 <h2 id="exhibitTitleShow">Brave New World</h2>
+                {/* <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5> */}
+              </div>
+            </Link>
+          </motion.div>
+        </Carousel.Caption>
+        <Carousel.Caption>
+          {" "}
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 4.0,
+              delay: 0.4,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <Link to="/artist-profile" style={{ textDecoration: "none" }}>
+              <div className="dateBox">
                 <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
+                <p className="showBlurb">
+                  &quot;An Unforgettable experience unlike any other&quot;
+                </p>
               </div>
             </Link>
           </motion.div>
@@ -35,6 +58,7 @@ function HomeCarousel() {
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxA">
               <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
+              <p className="presents">presents</p>
               <h2 id="exhibitTitleShow">Brave New World</h2>
               <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5>
             </div>

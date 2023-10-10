@@ -43,3 +43,8 @@
   margin-left: 50px;
   margin-top: -8px;
 }
+@media only screen and (max-width: 775px) {
+  #headerBox {
+    padding-left: 20px;
+  }  
+}

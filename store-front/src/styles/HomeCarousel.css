@@ -1,6 +1,7 @@
 #carouselPic {
   max-height: 90vh;
-  min-height: 60vh;
+  min-height: 55vh;
+  max-width: 1600px;
   width: 95vw;
 }
 #carouselCaptionA {
@@ -11,35 +12,45 @@
   bottom: 10vh;
 }
 #exhibitTitleText {
-  margin-left: -120px;
   letter-spacing: 5px;
-  /* font-family: "Barlow", sans-serif; */
   font-family: "Gabarito", cursive;
-  /* font-family: "Onest", sans-serif; */
-  /* font-family: "Open Sans", sans-serif; */
-  font-weight: 600;
+  font-weight: 500;
   font-size: 65px;
-  color: rgb(113, 255, 255);
+  color: rgb(99, 255, 255);
+  text-shadow: rgb(0, 201, 201) 1px 1px 1px;
+  margin-bottom: 8px;
+}
+.presents {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0;
+  color: rgb(165, 252, 252);
 }
 #exhibitTitleShow {
-  /* font-style: italic; */
-  margin-left: -110px;
+  font-style: italic;
+  letter-spacing: 2px;
   font-size: 50px;
   font-family: "Gabarito", cursive;
-
   color: rgb(120, 251, 185);
+  text-shadow: rgb(6, 146, 76) 1px 1px 1px;
 }
 #exhibitTitleDates {
-  margin-left: 30px;
-  margin: 15px 0 0 130px;
-  font-size: 35px;
-  /* font-family: "Barlow", sans-serif; */
+  font-size: 30px;
+  text-shadow: rgb(0, 78, 78) 1px 1px 1px;
   font-family: "Gabarito", cursive;
-
-  color: rgb(255, 204, 86);
+  color: rgb(120, 255, 255);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.showBlurb {
+  text-decoration: none;
+  color: rgb(120, 251, 185);
+  font-size: 20px;
+  font-weight: 600;
 }
 #exhibitTitleText2 {
   color: white;
+  text-shadow: black 1px 1px 1px;
   letter-spacing: 4px;
   font-family: "Martian Mono", monospace;
   font-size: 45px;
@@ -47,16 +58,65 @@
 #exhibitTitleShow2 {
   color: white;
   font-style: italic;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 4px;
-  font-family: "Rambla", sans-serif;
+  font-family: "Martian Mono", monospace;
   margin-top: 20px;
 }
 #exhibitTitleDates2 {
   margin-top: 20px;
   color: white;
-  font-size: 25px;
-  font-family: "Rambla", sans-serif;
+  font-size: 20px;
+  font-family: "Martian Mono", monospace;
 }
-@media only screen and (max-width: 1175px) {
+
+@media only screen and (max-width: 970px) {
+  #exhibitTitleText2 {
+    font-size:35px
+
+  }
+  #exhibitTitleShow2 {
+    font-size: 30px;
+  }
+  #exhibitTitleDates2 {
+
+  }
+  #exhibitTitleText {
+    font-size: 50px
+  }
+  .presents {
+  }
+  #exhibitTitleShow {
+    font-size: 40px;
+  }
+  #exhibitTitleDates {
+  }
+  .showBlurb {
+  }
+}
+@media only screen and (max-width: 775px) {
+  #exhibitTitleText2 {
+    font-size:25px
+  }
+  #exhibitTitleShow2 {
+    font-size: 20px;
+  }
+  #exhibitTitleDates2 {
+    font-size: 15px;
+  }
+  #exhibitTitleText {
+    font-size: 40px
+  }
+  .presents {
+    font-size: 13px;
+  }
+  #exhibitTitleShow {
+    font-size: 30px;
+  }
+  #exhibitTitleDates {
+    font-size: 22px;
+  }
+  .showBlurb {
+    font-size: 15px;
+  }
 }

@@ -1,8 +1,6 @@
 import "../styles/About.css";
 import { motion } from "framer-motion";
-import galleryPic from "../assets/galleryAbout.jpg";
 import aboutBg from "../assets/aboutBg.jpg";
-import founderPic from "../assets/founder.jpg";
 import artPic from "../assets/artcrop4.jpg";
 import AboutCarousel from "./AboutCarousel";
 import HomeFooter from "./HomeFooter";
@@ -101,21 +99,6 @@ function About() {
             </p>
           </div>
           <HomeFooter />
-          {/* <div id="aboutGalleryBox">
-            <img id="founderPic" src={founderPic} alt="" />
-          </div>
-          <div id="aboutBox">
-            <h5 id="aboutHeading">The Visionaries Behind Sip </h5>
-            <p>
-              Isabella Thornton, a passionate art enthusiast with a discerning
-              eye for talent, had long dreamt of creating a space where art
-              could seamlessly blend with a delightful ambiance. Her desire was
-              to break away from the traditional, sterile gallery settings and
-              instead, infuse art with the warmth of a cozy cafe. Her partner,
-              Ethan Sinclair, shared her vision, bringing architectural
-              brilliance to the table.
-            </p>
-          </div> */}
         </div>
       </motion.div>
     </>
