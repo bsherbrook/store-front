@@ -7,7 +7,7 @@ function HomeCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/galleryHome.jpg" />
+        <img id="carouselPic" src="src/assets/galleryHome.jpg" alt="an art gallery full of paintings" />
         <Carousel.Caption id="carouselCaptionA">
           <motion.div
             className="box"
@@ -53,7 +53,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/westernrain.jpg" />
+        <img id="carouselPic" src="src/assets/westernrain.jpg" alt="a painting of wagons caught in a desert rain" />
         <Carousel.Caption id="carouselCaptionA">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxA">
@@ -66,7 +66,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/abstract.jpg" />
+        <img id="carouselPic" src="src/assets/abstract.jpg" alt="an abstract painting of green and blue swirls"/>
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">
@@ -78,7 +78,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/artistlight.jpg" />
+        <img id="carouselPic" src="src/assets/artistlight.jpg" alt="a picture of the artist standing in atmospheric red lighting" />
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">

@@ -4,8 +4,9 @@ import aboutBg from "../assets/aboutBg.jpg";
 import artPic from "../assets/artcrop4.jpg";
 import AboutCarousel from "./AboutCarousel";
 import HomeFooter from "./HomeFooter";
+import MobileFooter from "./MobileFooter";
 
-function About() {
+function About(props) {
   return (
     <>
       <motion.div
@@ -22,7 +23,7 @@ function About() {
         <div id="aboutUs" style={{ backgroundImage: `url(${aboutBg})` }}>
           <div id="aboutTitleBox">
             <h2 id="whoWeAre">Who We Are</h2>
-            <img id="testpic" src={artPic} alt="" />
+            <img id="aboutPainting" src={artPic} alt="a pointilist painting of a woman with flowers" />
             <div id="aboutContactBox">
               <h5 id="aboutContactHead">Contact Us</h5>
               <p className="aboutInfo">info@GalleySip.com</p>
@@ -61,7 +62,7 @@ function About() {
           </div>
           <div id="aboutGalleryBox">
             <img
-              id="aboutGallery"
+              id="aboutPainting2"
               src="src/assets/storepic2.jpg"
               alt="an art show at gallery at sip"
             />
@@ -85,7 +86,7 @@ function About() {
               mantra became clear: art should be savored slowly, just like a
               perfectly brewed cup of coffee.
             </p>
-            <p>
+            <p id="aboutBottomText">
               In 2023, Sip Gallery stands as a testament to the power of a dream
               nurtured with passion and dedication. With a rich history of
               nurturing talent, fostering creativity, and celebrating the fusion
@@ -98,7 +99,7 @@ function About() {
               coffee, tea, and conversation.
             </p>
           </div>
-          <HomeFooter />
+          {props.width > 700 ? <HomeFooter /> : <MobileFooter />}
         </div>
       </motion.div>
     </>

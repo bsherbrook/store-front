@@ -1,56 +1,69 @@
-#mobileCarouselPic {
-  max-height: 60vh;
-  min-height: 40vh;
-  width: 98vw;
-}
-#mobileCaptionBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 20px 0 0 25px;
-  height: 120px;
-}
-.carousel-indicators > button {
-  display: none;
-}
-#exhibitTitleText2 {
-  font-size: 25px;
-}
-#exhibitTitleShow2 {
-  font-size: 20px;
-}
-#exhibitTitleDates2 {
-  font-size: 15px;
-}
-#exhibitTitleText {
-  font-size: 30px;
-}
-#exhibitTitleShow {
-  font-size: 25px;
-}
-#exhibitTitleDates {
-  font-size: 22px;
-}
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
+  #mobileCarouselBox{
+    padding-top: 70px;
+  }
+  #mobileCarouselPic {
+    max-height: 60vh;
+    min-height: 40vh;
+    width: 98vw;
+  }
+  #mobileCaptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0 0 25px;
+    height: 180px;
+  }
+  .carousel-indicators > button {
+    display: none;
+  }
   #exhibitTitleText2 {
-    font-size: 20px;
-    margin: 0 0 8px 0
+    font-size: 25px;
+    text-shadow: 1px 1px gray;
   }
   #exhibitTitleShow2 {
-    font-size: 16px;
-    margin: 5px 0 8px 0
+    font-size: 20px;
   }
   #exhibitTitleDates2 {
-    margin-top:5px;
+    font-size: 15px;
+  }
+  #exhibitTitleText {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #exhibitTitleShow {
+    font-size: 25px;
+  }
+  #exhibitTitleDates {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #mobileCarouselPic {
+    max-height: 60vh;
+    min-height: 45vh;
+    width: 97vw;
+  }
+  #exhibitTitleText2 {
+    font-size: 25px;
+    margin: 0 0 8px 0;
+  }
+  #exhibitTitleShow2 {
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+  }
+  #exhibitTitleDates2 {
+    margin-top: 5px;
     margin-bottom: 12px;
     font-size: 12px;
   }
   #exhibitTitleText {
-    font-size: 25px;
+    font-size: 30px;
   }
   #exhibitTitleShow {
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
   #exhibitTitleDates {
     font-size: 18px;

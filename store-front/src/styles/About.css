@@ -1,57 +1,111 @@
-#aboutUs{
-    display: flex;
-    flex-direction: column;
-     /* font-family: "Martian Mono", monospace; */
-    /* font-family: "Rambla", sans-serif; */
-    font-family: "Barlow", sans-serif;
-    /* font-family: "Gabarito", cursive; */
-    font-family: "Onest", sans-serif;
-    /* font-family: "Open Sans", sans-serif; */
+#aboutUs {
+  display: flex;
+  flex-direction: column;
+  /* font-family: "Martian Mono", monospace; */
+  /* font-family: "Rambla", sans-serif; */
+  font-family: "Barlow", sans-serif;
+  /* font-family: "Gabarito", cursive; */
+  font-family: "Onest", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+}
+#aboutPainting {
+  /* width:600px; */
+  width: 35vw;
+  min-height: 20vh;
+  min-width: 300px;
+}
+#aboutBox {
+  padding: 50px 20vw 20px 10vw;
+}
+#aboutBox > p {
+  font-size: 20px;
+  line-height: 25px;
+}
+#aboutTitleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 8px;
+  padding: 50px 15vw 0px 10vw;
+}
+#aboutContactHead {
+  margin-bottom: 25px;
+}
+.aboutInfo {
+  color: rgb(255, 31, 240);
+  font-size: 16px;
+}
+#whoWeAre {
+  letter-spacing: 3px;
+  margin: 75px 0 100px 0;
+}
+#aboutHeading {
+  margin: 20px 0 20px 20px;
+  color: gray;
+}
+#aboutPainting2 {
+  width: 35vw;
+}
+#aboutGalleryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#founderPic {
+  height: 400px;
+}
 
-}
-#testpic{
-    /* width:600px; */
-    width: 35vw;
-    min-height: 20vh
-}
-#aboutBox{
+@media only screen and (max-width: 1225px) {
+  #aboutBox {
     padding: 50px 20vw 20px 10vw;
+  }
+  #aboutTitleBox {
+    padding: 50px 5vw 0px 5vw;
+  }
+  #aboutPainting2 {
+    min-width: 500px;
+  }
 }
-#aboutBox>p{
-    font-size: 20px;
-    line-height: 25px;
+@media only screen and (max-width: 850px) {
+  #aboutBox {
+    padding: 50px 5vw 20px 5vw;
+  }
+  #aboutTitleBox {
+    flex-direction: column;
+  }
+  #whoWeAre {
+    font-size: 40px;
+    margin: 0 0 40px 0;
+  }
+  #aboutContactBox {
+    display: none;
+  }
+  #aboutPainting {
+    width: 80vw;
+    min-height: 15vh;
+  }
+  #aboutBottomText {
+    margin-bottom: 60px;
+  }
 }
-#aboutTitleBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 8px;
-    padding: 50px 15vw 0px 10vw;
-}
-#aboutContactHead{
-    margin-bottom: 25px;
-}
-.aboutInfo{
-    color: rgb(255, 31, 240);
+@media only screen and (max-width: 650px) {
+  #aboutBox > p {
     font-size: 16px;
+  }
+  #aboutBox > h5 {
+    font-size: 15px;
+  }
+  #whoWeAre {
+    font-size: 30px;
+  }
+  #aboutPainting2 {
+    width: 80vw;
+    min-width: 300px;
+  }
 }
-#whoWeAre{
-    letter-spacing: 3px;
-    margin: 75px 0 100px 0;
-}
-#aboutHeading{
-    margin: 20px 0 20px 20px;
-    color: gray;
-}
-#aboutGallery{
-    width: 35vw;    
-}
-#aboutGalleryBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-#founderPic{
-    height: 400px;
+@media only screen and (max-width: 650px) {
+  #aboutGalleryBox {
+    margin-top: 30px;
+  }
 }

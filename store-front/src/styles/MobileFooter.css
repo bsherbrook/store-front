@@ -1,0 +1,44 @@
+@media only screen and (max-width: 700px) {
+  #mobileFooter {
+    background-color: rgb(26, 25, 25);
+    color: rgb(220, 220, 220);
+    padding: 20px 10px 5px 10px;
+    line-height: 7px;
+  }
+  #addressTitle {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgb(102, 102, 102);
+  }
+  #footerInformed {
+    font-weight: 700;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgb(105, 105, 105);
+  }
+  #hoursHeading{
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgb(109, 109, 109);
+  }
+  .mobileFooterBox{
+    margin-bottom: 30px;
+  }
+  #homeFooterBlurb{
+    margin-top: 25px;
+    color: gray;
+}
+#homeFooterPlug{
+    margin-bottom: 5px;
+    color: rgb(171, 171, 171);
+    font-size: 12px;
+}
+
+  @media only screen and (max-width: 500px) {
+    #homeFooterBlurb{
+        font-size: 7px;
+        text-align: center;
+    }
+}
+}

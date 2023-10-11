@@ -1,6 +1,6 @@
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import MobileNav from "./MobileNav";
 
 function Header(props) {
   return (
@@ -28,6 +28,7 @@ function Header(props) {
           </svg>
         </Link>
       </div>
+      {props.width>700?(
       <div id="headerButtonBox">
         <Link to="/about" id="headerLink">
           About
@@ -42,6 +43,12 @@ function Header(props) {
           Shopping Cart
         </Link>
       </div>
+      ):
+      (
+      <div className="hamburgerBox">
+        <MobileNav />
+      </div>
+      )}
     </div>
   );
 }

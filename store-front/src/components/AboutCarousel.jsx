@@ -3,15 +3,15 @@ import "../styles/AboutCarousel.css";
 
 function AboutCarousel() {
   return (
-    <Carousel id="testing">
+    <Carousel id="aboutCarousel">
       <Carousel.Item>
-        <img id="test" src="src/assets/galleryAbout.jpg" />
+        <img id="aboutCarouselPic" src="src/assets/galleryAbout.jpg" alt="an art show at gallery at Sip"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="test" src="src/assets/aboutgallery.jpg" />
+        <img id="aboutCarouselPic" src="src/assets/aboutgallery.jpg" alt="the entry way to gallery at Sip" />
       </Carousel.Item>
       <Carousel.Item>
-        <img id="test" src="src/assets/aboutgallery3.jpg" />
+        <img id="aboutCarouselPic" src="src/assets/aboutgallery3.jpg" alt="the main gallery room at gallery at Sip" />
       </Carousel.Item>
     </Carousel>
   );

@@ -38,7 +38,7 @@ const HomeFooter = () => {
             </div>
             <p id="specialHours">
               * Gallery closes on third Thursday of <br/> every month at 3pm for
-              special ticketed event
+              special event
             </p>
           </div>
         </div>

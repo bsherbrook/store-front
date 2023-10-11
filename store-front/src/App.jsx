@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <RouteSwitch
-        Header={() => <Header />}
+        Header={() => <Header width={width}/>}
         pages={[
           {
             element: <Home width={width} />,
@@ -93,7 +93,7 @@ function App() {
           },
 
           {
-            element: <About />,
+            element: <About width={width} />,
             path: "/about",
             id: 2,
           },

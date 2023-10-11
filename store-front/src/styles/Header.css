@@ -22,6 +22,7 @@
   font-size: 16px;
 }
 #headerLogo{
+
   margin-left: 10px;
   margin-top: 14px;
 }
@@ -46,5 +47,23 @@
 @media only screen and (max-width: 775px) {
   #headerBox {
     padding-left: 20px;
-  }  
+    padding-right: 0px;
+  }
+  #basic-menu>.MuiPaper-root>ul{
+    width: 100%;
+    /* padding-right: 30px; */
+    background-color:  rgb(40, 39, 39);
+  }
+  .hamburger-link{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted gray;
+    padding-right: 30px;
+  }
+  .hamburger-link:hover{
+    color: rgb(165, 240, 255);
+  }
 }
