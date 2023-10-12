@@ -32,7 +32,7 @@
   justify-content: space-around;
   margin-bottom: 30px;
 }
-#storeHeadingTest {
+#storeHeadingMobile {
   font-size: 12px;
   text-align: center;
   width: 92vw;
@@ -95,7 +95,7 @@
   #storeHeadingInfo {
     display: none;
   }
-  #storeHeadingTest {
+  #storeHeadingMobile {
     font-size: 16px;
     text-align: center;
     width: 92vw;

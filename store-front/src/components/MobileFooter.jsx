@@ -1,4 +1,5 @@
 import "../styles/MobileFooter.css";
+import gitLogo from "../assets/github.png";
 
 const MobileFooter = () => {
   return (
@@ -24,7 +25,7 @@ const MobileFooter = () => {
               <p>Friday</p>
               <p>Saturday</p>
               <p>Sunday</p>
-              <p>Closed on Mondays</p>
+              <p>Closed Monday</p>
             </div>
             <div id="footerHoursTimes">
               <p>10am - 5pm</p>
@@ -56,7 +57,10 @@ const MobileFooter = () => {
           or recommendation by the state.
         </div>
         <div id="homeFooterPlug">
-          Bsherbrook@github
+          <p>
+            This website created by bsherbrook &nbsp;{" "}
+            <img src={gitLogo} alt="github link" id="gitLogo" />
+          </p>
         </div>
       </div>
     </>

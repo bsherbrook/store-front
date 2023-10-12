@@ -1,9 +1,11 @@
 import "../styles/Cart.css";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CartCard from "./CartCard";
 import { Link } from "react-router-dom";
 import HomeFooter from "./HomeFooter";
 import Empty from "../assets/empty.jpg";
 import { motion } from "framer-motion";
+import MobileFooter from "./MobileFooter";
 
 const Cart = ({
   cart,
@@ -12,6 +14,7 @@ const Cart = ({
   onDecrement,
   onIncrement,
   onRemove,
+  width,
 }) => {
   let total = Number(subTotal).toFixed(2);
   let cartItemNum = cart.reduce(
@@ -38,10 +41,10 @@ const Cart = ({
             </motion.div>
 
             <p className="mt-cart-title">
-              There are currently no items in your cart.
+              There are currently no items in your cart
             </p>
             <Link to="/store" className="mt-cart-link">
-              Continue shopping
+              Continue shopping &nbsp; <ShoppingCartIcon />
             </Link>
           </div>
         ) : (
@@ -69,7 +72,7 @@ const Cart = ({
           Subtotal ({cartItemNum} Items): $ {total.toLocaleString()}
         </div>
       </div>
-      <HomeFooter />
+      {width > 750 ? <HomeFooter /> : <MobileFooter />}
     </>
   );
 };

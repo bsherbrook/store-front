@@ -4,6 +4,7 @@ import productList from "../productList";
 import HomeFooter from "./HomeFooter";
 import MobileFooter from "./MobileFooter";
 
+
 function Store(props) {
   let breakpoint = 575;
   let storeBanner = "src/assets/storepic5.jpg";
@@ -34,7 +35,7 @@ function Store(props) {
             offerings online at www.thegalleryatthesip.com/store.
           </div>
         </div>
-        <div id="storeHeadingTest">
+        <div id="storeHeadingMobile">
             Discover The Sip Shop for one-of-a-kind presents, fashionable
             attire, and captivating art books suitable for individuals of all
             ages. The Shop is accessible during gallery operating hours and
@@ -44,6 +45,7 @@ function Store(props) {
             Shop during your next gallery visit, and you can also explore our
             offerings online at www.thegalleryatthesip.com/store.
           </div>
+          <div>Click picture for product info</div>
       </div>
       <div id="storeCardBox">
         {productList.map((product) => (

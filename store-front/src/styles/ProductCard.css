@@ -69,6 +69,8 @@
 }
 #productCardPic {
   width: 250px;
+  border: 1px solid rgb(65, 65, 172);
+  border-radius: 8px;
 }
 #productCardPic:hover {
   cursor: pointer;
@@ -77,6 +79,10 @@
   width: 40px;
   height: 40px;
   text-align: center;
+}
+#infoHelper{
+  font-size: 12px;
+  color: rgb(0, 145, 255);
 }
 #quantityInput::-webkit-outer-spin-button,
 #quantityInput::-webkit-inner-spin-button,

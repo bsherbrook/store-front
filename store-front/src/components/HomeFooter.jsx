@@ -1,4 +1,5 @@
 import "../styles/HomeFooter.css";
+import gitLogo from "../assets/github.png";
 
 const HomeFooter = () => {
   return (
@@ -25,7 +26,7 @@ const HomeFooter = () => {
                 <p>Friday</p>
                 <p>Saturday</p>
                 <p>Sunday</p>
-                <p>Closed on Mondays</p>
+                <p>Closed Monday</p>
               </div>
               <div id="footerHoursTimes">
                 <p>10am - 5pm</p>
@@ -37,8 +38,8 @@ const HomeFooter = () => {
               </div>
             </div>
             <p id="specialHours">
-              * Gallery closes on third Thursday of <br/> every month at 3pm for
-              special event
+              * Gallery closes on third Thursday of <br /> every month at 3pm
+              for special event
             </p>
           </div>
         </div>
@@ -58,7 +59,10 @@ const HomeFooter = () => {
           or recommendation by the state.
         </div>
         <div id="homeFooterPlug">
-          This website created by bsherbrook github links etc.
+          <p>
+            This website created by bsherbrook &nbsp;{" "}
+            <img src={gitLogo} alt="github link" id="gitLogo" />
+          </p>
         </div>
       </div>
     </>

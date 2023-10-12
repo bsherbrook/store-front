@@ -120,6 +120,7 @@ function App() {
                 onDecrement={decrementCartItem}
                 onIncrement={incrementCartItem}
                 onRemove={deleteFromCart}
+                width={width}
               />
             ),
             path: "/cart",

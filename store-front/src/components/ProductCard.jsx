@@ -4,7 +4,7 @@ import { useState } from "react";
 import Quantity from "./Quantity";
 import Cup from "../assets/cup-hot-fill.svg";
 
-const ProductCard = ({ product, addToCart, cartChange, cart }) => {
+const ProductCard = ({ product, addToCart, cartChange }) => {
   const [quantity, setQuantity] = useState(1);
   const handleStoreChange = (e) => {
     let val = e.target.value;
@@ -64,6 +64,7 @@ const ProductCard = ({ product, addToCart, cartChange, cart }) => {
           id="productCardPic"
           onClick={showInfo}
         />
+        <p id="infoHelper">Click pic for product info</p>
         <h3>{product.name}</h3>
         <p>${product.price.toFixed(2)}</p>
         <Quantity

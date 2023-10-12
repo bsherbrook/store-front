@@ -36,3 +36,26 @@
 #deleteCartBtn{
   font-size: 12px;
 }
+@media only screen and (max-width: 670px) {
+  .cart-item-description{
+  font-size: 12px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .cart-item-description{
+    display: none;
+  }
+  #cartItem{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgb(236, 243, 253);
+  }
+  #cartItemPic {
+    width: 200px;
+    margin-bottom: -30px;
+    border-radius: 8px;
+    border: 1px solid rgb(153, 192, 255);
+  }
+}
+
