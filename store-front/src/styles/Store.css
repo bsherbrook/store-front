@@ -1,32 +1,112 @@
-#storeBannerPic{
-    height: 35vh;
-    width: 99vw;
+#storeBannerPic {
+  min-height: 35vh;
+  max-height: 45vh;
+  max-width: 99vw;
+  min-width: 90vw;
 }
-#storeBannerBox{
-    display: flex;
-    justify-content: center;
-    background-color: black;
+#storeBannerBox {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(23, 23, 23);
+  border-bottom: 3px solid black;
+  box-shadow: 0px 2px 3px rgb(127, 58, 156);
 }
-#storeHeading{
-    display: flex;
+#storeHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  padding: 50px;
+}
+#storeHeadingSip {
+  margin-left: 100px;
+}
+#storeHeadingTitle {
+  width: 30vw;
+}
+#storeHeadingBlurb {
+  width: 500px;
+}
+#storeCardBox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+#storeHeadingTest {
+  font-size: 12px;
+  text-align: center;
+  width: 92vw;
+  display: none;
+  /* margin-left: 70px; */
+}
+@media only screen and (max-width: 1230px) {
+  #storeCardBox {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 30px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  #storeHeading {
+    /* display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Barlow", sans-serif;
-    padding: 50px;
-    /* font-family: "Martian Mono", monospace; */
-    /* font-family: "Rambla", sans-serif; */
-}
-#storeHeadingSip{
-    margin-left: 100px;
-}
-#storeHeadingTitle{
-    width:50vh;
-}
-#storeHeadingBlurb{
-    width: 500px;
-}
-#storeCardBox{
-    display: flex;
+    padding: 50px; */
+    padding: 50px 15px 50px 15px;
     justify-content: space-around;
-    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  #storeHeading {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #headingWelcome {
+    display: none;
+  }
+  #storeHeadingTitle {
+    width: 280px;
+  }
+  #storeHeadingInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 620px) {
+  #storeCardBox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #storeBannerPic {
+    min-height: 35vh;
+    max-height: 35vh;
+    max-width: 99vw;
+    min-width: 90vw;
+  }
+  #storeHeadingInfo {
+    display: none;
+  }
+  #storeHeadingTest {
+    font-size: 16px;
+    text-align: center;
+    width: 92vw;
+    display: flex;
+    margin-top: -25px;
+  }
+  #storeHeadingTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+  }
 }

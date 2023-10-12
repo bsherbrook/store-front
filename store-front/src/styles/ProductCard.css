@@ -114,3 +114,9 @@
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 1230px) {
+  #productCard {
+    width: 290px
+  } 
+}

@@ -105,6 +105,7 @@ function App() {
                 addToCart={addToCart}
                 cartChange={onCartChange}
                 cart={cart}
+                width={width}
               />
             ),
             path: "/store",
