@@ -4,12 +4,12 @@ import Quantity from "./Quantity";
 import Button from "react-bootstrap/esm/Button";
 
 const CartCard = ({item, cart, cartChange, increase, decrease, remove }) => {
-  
+  // `../src/assets/${item.image}`
   return (
     <>
       <div id="cartItem">
         <img
-          src={`../src/assets/${item.image}`}
+          src={`./assets/${item.image}`}
           alt={item.name}
           id="cartItemPic"
         />

@@ -59,7 +59,7 @@ const ProductCard = ({ product, addToCart, cartChange }) => {
       </div>
       <div id="productDisplay">
         <img
-          src={`../src/assets/${product.image}`}
+          src={`./assets/${product.image}`}
           alt={product.name}
           id="productCardPic"
           onClick={showInfo}

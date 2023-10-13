@@ -2,12 +2,16 @@ import Carousel from "react-bootstrap/Carousel";
 import "../styles/HomeCarousel.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import CarouselPic1 from '../assets/galleryHome.jpg'
+import CarouselPic2 from "../assets/westernrain.jpg"
+import CarouselPic3 from "../assets/abstract.jpg"
+import CarouselPic4 from "../assets/artistlight.jpg"
 
 function HomeCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/galleryHome.jpg" alt="an art gallery full of paintings" />
+        <img id="carouselPic" src={CarouselPic1} alt="an art gallery full of paintings" />
         <Carousel.Caption id="carouselCaptionA">
           <motion.div
             className="box"
@@ -53,7 +57,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/westernrain.jpg" alt="a painting of wagons caught in a desert rain" />
+        <img id="carouselPic" src={CarouselPic2} alt="a painting of wagons caught in a desert rain" />
         <Carousel.Caption id="carouselCaptionA">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxA">
@@ -66,7 +70,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/abstract.jpg" alt="an abstract painting of green and blue swirls"/>
+        <img id="carouselPic" src={CarouselPic3} alt="an abstract painting of green and blue swirls"/>
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">
@@ -78,7 +82,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img id="carouselPic" src="src/assets/artistlight.jpg" alt="a picture of the artist standing in atmospheric red lighting" />
+        <img id="carouselPic" src={CarouselPic4} alt="a picture of the artist standing in atmospheric red lighting" />
         <Carousel.Caption id="carouselCaptionB">
           <Link to="/artist-profile" style={{ textDecoration: "none" }}>
             <div id="homeExhibitBoxB">

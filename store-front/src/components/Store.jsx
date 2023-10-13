@@ -3,19 +3,21 @@ import ProductCard from "./ProductCard";
 import productList from "../productList";
 import HomeFooter from "./HomeFooter";
 import MobileFooter from "./MobileFooter";
+import StoreBannerPic from "../assets/storepic5.jpg"
+import StoreBannerPicSm from "../assets/storepicSm.jpg"
 
 
 function Store(props) {
-  let breakpoint = 575;
-  let storeBanner = "src/assets/storepic5.jpg";
-  if (props.width < breakpoint) {
-    storeBanner = "src/assets/storepicSm.jpg";
-  }
 
   return (
     <>
       <div id="storeBannerBox">
-        <img id="storeBannerPic" src={storeBanner} alt="art available at Sip" />
+      {props.width > 575 ? (
+            <img id="storeBannerPic" src={StoreBannerPic} alt="art available at Sip" />
+          ) : (
+            <img id="storeBannerPic" src={StoreBannerPicSm} alt="art available at Sip" />
+
+          )}
       </div>
       <div id="storeHeading">
         <div id="storeHeadingTitle">

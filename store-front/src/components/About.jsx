@@ -5,6 +5,7 @@ import artPic from "../assets/artcrop4.jpg";
 import AboutCarousel from "./AboutCarousel";
 import HomeFooter from "./HomeFooter";
 import MobileFooter from "./MobileFooter";
+import storePic2 from "../assets/storepic2.jpg"
 
 function About(props) {
   return (
@@ -63,7 +64,7 @@ function About(props) {
           <div id="aboutGalleryBox">
             <img
               id="aboutPainting2"
-              src="src/assets/storepic2.jpg"
+              src={storePic2}
               alt="an art show at gallery at sip"
             />
           </div>
