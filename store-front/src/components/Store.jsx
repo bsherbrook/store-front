@@ -57,7 +57,6 @@ function Store(props) {
             addToCart={props.addToCart}
             cart={props.cart}
             cartChange={props.cartChange}
-            ///handle input changes for product cards
           />
         ))}
       </div>

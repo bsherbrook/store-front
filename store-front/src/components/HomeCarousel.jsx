@@ -28,7 +28,6 @@ function HomeCarousel() {
                 <h1 id="exhibitTitleText">Zalfa Anjelee-Imani</h1>
                 <p className="presents">presents</p>
                 <h2 id="exhibitTitleShow">Brave New World</h2>
-                {/* <h5 id="exhibitTitleDates">January 21, 2024 - June 15, 2024</h5> */}
               </div>
             </Link>
           </motion.div>

@@ -23,9 +23,9 @@ const ProductCard = ({ product, addToCart, cartChange }) => {
     e.target.className += ` shake`;
     setTimeout(() => {
       e.target.className = `btn btn-primary`;
-      // e.target.style.backgroundColor='#0d6efd';
     }, 1000);
   };
+  
   const showInfo = (e) => {
     let productDisplay = e.target.parentNode;
     productDisplay.className = "hidden";
@@ -59,7 +59,7 @@ const ProductCard = ({ product, addToCart, cartChange }) => {
       </div>
       <div id="productDisplay">
         <img
-          src={`./assets/${product.image}`}
+          src={`/${product.image}`}
           alt={product.name}
           id="productCardPic"
           onClick={showInfo}
