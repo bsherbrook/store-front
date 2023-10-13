@@ -1,5 +1,5 @@
 import "../styles/Cart.css";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CartCard from "./CartCard";
 import { Link } from "react-router-dom";
 import HomeFooter from "./HomeFooter";
@@ -44,7 +44,8 @@ const Cart = ({
               There are currently no items in your cart
             </p>
             <Link to="/store" className="mt-cart-link">
-              Continue shopping &nbsp; <ShoppingCartIcon />
+              Continue shopping 
+              {/* &nbsp; <ShoppingCartIcon /> */}
             </Link>
           </div>
         ) : (
